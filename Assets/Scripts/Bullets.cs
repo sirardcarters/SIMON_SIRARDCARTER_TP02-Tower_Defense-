@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class MovementPNJ : Ennemies
+public class Bullets : MonoBehaviour
 {
-    
     // Start is called before the first frame update
+    public void Setup(Vector3 shootDir)
+    {
 
-    // Update is called once per frame
-
+    }
 }
