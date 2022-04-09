@@ -14,6 +14,7 @@ public class UiManager : MonoBehaviour
     float lifeNb = 3;
     public Text LifeCount;
     public Text over;
+    
 
     //public GameObject PauseMenuUi;
     // Start is called before the first frame update
@@ -59,5 +60,9 @@ public class UiManager : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
         over.text = ("Game Over : You Are Dead :(");
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        
     }
 }
