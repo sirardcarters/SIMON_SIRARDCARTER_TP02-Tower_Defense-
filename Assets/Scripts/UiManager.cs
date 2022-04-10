@@ -14,7 +14,9 @@ public class UiManager : MonoBehaviour
     float lifeNb = 3;
     public Text LifeCount;
     public Text over;
-    
+    public Text EnnemyCount;
+    public float numberofkilled = 0;
+    public Waves wav;
 
     //public GameObject PauseMenuUi;
     // Start is called before the first frame update
@@ -23,6 +25,7 @@ public class UiManager : MonoBehaviour
         currentTime = 0;
         pause.onClick.AddListener(PauseGame);
         play.onClick.AddListener(ResumeGame);
+        wav = FindObjectOfType<Waves>();
     }
 
     // Update is called once per frame
@@ -31,6 +34,8 @@ public class UiManager : MonoBehaviour
         currentTime = currentTime + Time.deltaTime;
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
         timeText.text = time.ToString(@"mm\:ss\:ff");
+        EnnemyCount.text = numberofkilled.ToString();
+        wav.EnnemyCount = numberofkilled;
 
     }
     void PauseGame()

@@ -19,7 +19,7 @@ public class Gun_Tower : Tower
     void Start()
     {
         enn = FindObjectOfType<Ennemies>();
-        InvokeRepeating("DelayedUpdate", 0.2f, 0.2f);
+        InvokeRepeating("DelayedUpdate", 0.3f, 0.3f);
     }
 
     void DelayedUpdate()
