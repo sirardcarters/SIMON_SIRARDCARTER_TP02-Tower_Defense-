@@ -27,15 +27,11 @@ public class Bullets : MonoBehaviour
             if (other.gameObject.tag == "Ennemies" && GameObject.Find("Nighshade_Variant"))
             {
                 night.LifeLoss();
-       
+
             }
             else
             {
-                if (other.gameObject.tag == "Ennemies" && GameObject.Find("warrok Variant"))
-                {
-                    warrock.LifeLoss();
-
-                }
+                warrock.LifeLoss();
             }
         }
 

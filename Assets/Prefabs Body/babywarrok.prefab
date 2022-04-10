@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d04662dcb276ab4eb090032a016c1f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeNumber: 6
+  lifeNumber: 3
   warrok: {fileID: 3154891104970155309}
+  babywarrok: {fileID: 0}
 --- !u!1 &5914794067791520857
 GameObject:
   m_ObjectHideFlags: 0
@@ -51,6 +52,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1970708294206731636, guid: b52dbbcd8c0c14340abd13fde785dd1d, type: 3}
+      propertyPath: m_Speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1970708294206731637, guid: b52dbbcd8c0c14340abd13fde785dd1d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -101,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1970708294206731642, guid: b52dbbcd8c0c14340abd13fde785dd1d, type: 3}
       propertyPath: m_Name
-      value: warrok Variant
+      value: babywarrok
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b52dbbcd8c0c14340abd13fde785dd1d, type: 3}

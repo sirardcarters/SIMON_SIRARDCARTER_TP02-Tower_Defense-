@@ -20,4 +20,5 @@ public abstract class Ennemies : MonoBehaviour
     public virtual void LifeLoss()
     {
     }
+    
 }
