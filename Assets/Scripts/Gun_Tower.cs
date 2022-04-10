@@ -9,6 +9,7 @@ public class Gun_Tower : Tower
     public Transform bulletStart;
     public TrailRenderer tracerEffect;
     private Ennemies enn;
+    public AudioSource audio;
 
     private bool onRange = false;
 
@@ -44,6 +45,7 @@ public class Gun_Tower : Tower
             ray.direction = bulletStart.forward;
             var tracer = Instantiate(tracerEffect, ray.origin, Quaternion.identity);
             tracer.AddPosition(ray.origin);
+            audio.Play();
             if (Physics.Linecast(bulletStart.position, nearestEnemy.transform.position, out hitInfo))
             {
                 tracer.transform.position = hitInfo.point;
